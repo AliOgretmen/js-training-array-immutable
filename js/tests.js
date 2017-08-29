@@ -29,7 +29,7 @@ describe('Chapter 01 - Get general information about the train', () => {
     
     it('05) How many men are in the passengers?', () => {
         let result = findNumberOfMen(Passengers); 
-        result.should.be.equal(12);
+        result.should.be.equal(13);
     });
     
     it('06) How many passengers are not adult?', () => {

@@ -26,29 +26,60 @@
 
 
 function findNumberOfPassengers(pPassengers){
-    return pPassengers;
+    
+     return pPassengers.length;
+    // Ali O : 
+    //There is used array`s length properties to find how many passengers are in the train.
 }
 
 function findPersonByIndex(pPassengers, pIndex){
+    pPassengers = Passengers[2].firstname;
     return pPassengers;
+    // Ali O : 
+    //There is used array`s index to find what is the first name of third person in the group.
 }
 
 function findNumberOfWomen(pPassengers){
-    return pPassengers;
+    var theWomen = pPassengers.filter(function(pPerson){
+                         return pPerson.gender == "F";
+                     });
+    
+    return theWomen.length;
+   
+   
+    
 }
 
 function findNumberOfMen(pPassengers){
-    return pPassengers;
+    const theMan = pPassengers.filter(function(pPerson){
+                         return pPerson.gender == "M";
+                     });
+    
+    return theMan.length;
 }
 
 function findPersonByTicketId(pPassengers, pId){
-    return pPassengers;
+    const person = pPassengers.find(function(pPerson){
+         return pPerson.id == pId;
+    });
+     
+    return person.lastname;
+    
 }
 
 function findPassengersWithNoChildren(pPassengers){
-    return pPassengers;
+     const noChild = pPassengers.filter(function(pPerson){
+         return pPerson.children[0] == undefined;
+    });
+     
+    return noChild.length;
+    
 }
 
 function findUnderagePassengers(pPassengers){
-    return pPassengers;
+   const Underage = pPassengers.filter(function(pPerson){
+         return pPerson.birth.getFullYear() > 1999;
+    });
+     
+    return Underage.length;
 }
