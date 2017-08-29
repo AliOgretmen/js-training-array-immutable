@@ -9,7 +9,7 @@
  * GENDER -> M(male) or F(female)
  */
 const Passengers = [
-        {
+    {
         id: 45,
         firstname: "Mehmet",
         lastname: "B.",

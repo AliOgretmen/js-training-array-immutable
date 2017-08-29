@@ -17,7 +17,7 @@ describe('Chapter 01 - Get general information about the train', () => {
         result.should.be.equal("Sevda");
     });
     
-    it('03) What is the last name of person with ticket-id 191?', () => {
+    it('03) What is the last name of the person with ticket-id 191?', () => {
         let result = findPersonByTicketId(Passengers, 191); 
         result.should.be.equal("K.");
     });

@@ -26,10 +26,14 @@
 
 
 function findNumberOfPassengers(pPassengers){
+<<<<<<< HEAD
     
      return pPassengers.length;
     // Ali O : 
     //There is used array`s length properties to find how many passengers are in the train.
+=======
+    return pPassengers.length;
+>>>>>>> 6e69f940fb992067eb93c3afc7c93fda96df4673
 }
 
 function findPersonByIndex(pPassengers, pIndex){
@@ -41,6 +45,7 @@ function findPersonByIndex(pPassengers, pIndex){
 
 function findNumberOfWomen(pPassengers){
     var theWomen = pPassengers.filter(function(pPerson){
+<<<<<<< HEAD
                          return pPerson.gender == "F";
                      });
     
@@ -48,6 +53,12 @@ function findNumberOfWomen(pPassengers){
    
    
     
+=======
+                        return pPerson.gender == "F";
+                    });
+    
+    return theWomen.length;
+>>>>>>> 6e69f940fb992067eb93c3afc7c93fda96df4673
 }
 
 function findNumberOfMen(pPassengers){
@@ -60,11 +71,18 @@ function findNumberOfMen(pPassengers){
 
 function findPersonByTicketId(pPassengers, pId){
     const person = pPassengers.find(function(pPerson){
+<<<<<<< HEAD
          return pPerson.id == pId;
     });
      
     return person.lastname;
     
+=======
+        return pPerson.id == pId;
+    });
+    
+    return person.lastname;
+>>>>>>> 6e69f940fb992067eb93c3afc7c93fda96df4673
 }
 
 function findPassengersWithNoChildren(pPassengers){
